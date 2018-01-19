@@ -2,11 +2,15 @@ $primary-width: 40%;
 $adaptive-width: 80%;
 $border: 2px solid #009688;
 
+header.container {
+  background-color: #419479;
+  color: #fff;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #009688;
 
   .left {
     @extend .container;
@@ -35,6 +39,29 @@ $border: 2px solid #009688;
     justify-content: center;
     width: $primary-width;
     padding: 10px;
+  }
+}
+
+article.container {
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    font: 28px 'Relawey';
+  }
+  .container {
+
+    .left {
+
+      h4 {
+        font: 22px 'Relawey';
+        text-transform: uppercase;
+      }
+
+      p {
+        text-align: justify;
+      }
+    }
   }
 }
 

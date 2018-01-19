@@ -5,19 +5,45 @@
 
 body {
   font-family: 'Lato';
-  color: #ffffff;
   font-weight: 300;
   font-size: 16px;
-  background-color: #214c63;
+  color: #444;
+  background-color: rgb(240, 241, 242);
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .img-av {
-  border-radius: 10px;
-  border: $border;
+  // border-radius: 10px;
   width: 250px;
   height: 250px;
 }
 
+.img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 45%;
+  height: auto;
+}
+
+.template {
+  -webkit-box-shadow: 9px 9px 46px 11px rgba(0,0,0,0.63);
+     -moz-box-shadow: 9px 9px 46px 11px rgba(0,0,0,0.63);
+          box-shadow: 9px 9px 46px 11px rgba(0,0,0,0.63);
+
+  width: 320px;
+  height: auto;
+}
+
 #about__me {
   text-align: center;
+}
+
+footer.container {
+  color: #fff;
+  background-color: #419479;
 }
